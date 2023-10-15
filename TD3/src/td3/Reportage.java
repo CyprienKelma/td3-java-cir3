@@ -37,4 +37,15 @@ public class Reportage extends Emission {
         this.theme = theme;
     }
 
+
+    // Ici les getters et setters sont fait à la main
+    
+    public Theme getTheme() {
+        return theme;
+    }
+
+    public void setTheme(Theme newTheme) {
+        this.theme = newTheme;
+    }
+
 }

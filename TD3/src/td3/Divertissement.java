@@ -6,11 +6,28 @@ package td3;
   */
 public class Divertissement extends Emission{
     
+   /*
+    * Bien que l'on est defini une "duree" puisque la solution est fondé sur l'héritage, 
+    * on impose des émissions de 2 heures :
+    */
+    private static final int FIXED_DURATION = 2;
+
     private String animateurName;
 
-    Divertissement(String name, int duree, String animateur){
-        super(name, duree);
+    Divertissement(String name, String animateur){
+        super(name);
+        this.duree = FIXED_DURATION;
         this.animateurName = animateur;
     }
 
+
+    // Ici les getters et setters sont fait à la main
+
+    public String getAnimateurName() {
+        return animateurName;
+    }
+
+    public void setAnimateurName(String newName) {
+        this.animateurName = newName;
+    }
 }
